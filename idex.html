@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!--  -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Exemplo</title>
+  <script>
+    const numeroConst = 2;
+
+
+
+
+    function conta(numero) {
+
+      if (numero) {
+        // if (numero > numeroConst) {
+        //   alert("Número maio que " + numeroConst)
+        // } else {
+        //   if (numero == numeroConst) {
+        //     alert('Número igual a ' + numeroConst)
+        //     }
+        //   else alert('Número ' + numero + ' é menor ' + numeroConst)
+        // }
+
+
+        
+        // if(numero % 2 == 0) alert(numero + ' é múltiplo de 2' )
+        // else alert(numero + ' não é múltiplo de 2' )
+      } else alert('Número não informado')
+
+    }
+  </script>
+
+  <style>
+    .btn {
+      background-color: brown;
+      width: 50px;
+      height: 30px;
+    }
+
+    .btn-modificado {
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
-  
+
+  <input type="number" id="numero">
+
+
+  <button class="btn btn-modificado" onclick="conta(numero.value)">
+    Ok
+  </button>
+
 </body>
+
 </html>
